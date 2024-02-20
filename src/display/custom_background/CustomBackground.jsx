@@ -24,7 +24,6 @@ export default function CustomBackground() {
         const revisedImportBackgrounds = importBackgrounds.map(file => file['fileSrc'])
 
         const allBackgrounds = [...presetBackgrounds, ...revisedImportBackgrounds];
-        console.log(allBackgrounds)
 
         setBackgrounds([...allBackgrounds]);
 

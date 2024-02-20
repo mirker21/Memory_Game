@@ -190,21 +190,39 @@ export default function CustomGameOptions() {
 
                 setLayoutShapes([defaultLayoutShape, 'default']);
 
-            } else {
+            } else if (layouts.length < rounds && layouts.length > 0) {
+                let addedLayouts = [];
+
+                for (let layoutIndex = 0; layoutIndex < rounds; layoutIndex++) {
+                    addedLayouts.push(...layouts);
+                }
+
+                addedLayouts = addedLayouts.slice(0, rounds);
+                setLayoutShapes([...addedLayouts]);
+
+            } else if (layouts.length === rounds) {
                 setLayoutShapes([...layouts]);
             }
 
             if (backgrounds.length === 0) {
-
-                let newBackgrounds = []
+                let newBackgrounds = [];
 
                 for (let backgroundIndex = 0; backgroundIndex < rounds; backgroundIndex++) {
                     const newRandomBackgroundIndex = Math.floor(Math.random() * rounds);
                     newBackgrounds.push(imagePresetFileNames[newRandomBackgroundIndex]);
                 }
 
-                setBackgrounds([...newBackgrounds])
+                setBackgrounds([...newBackgrounds]);
 
+            } else if (backgrounds.length < rounds && backgrounds.length > 0) {
+                let newBackgrounds = [];
+
+                for (let backgroundIndex = 0; backgroundIndex < rounds; backgroundIndex++) {
+                    newBackgrounds.push(...backgrounds);
+                }
+
+                newBackgrounds = newBackgrounds.slice(0, rounds);
+                setBackgrounds([...newBackgrounds]);
             }
             
         }

@@ -65,7 +65,7 @@ export default function Preset({presetBackgrounds, setPresetBackgrounds, backgro
                             title={
                                 fileName
                                 .replace('/public/presets_library/background_presets/', '')
-                                .replace('4k.hdr', '')
+                                .replace('2k.hdr', '')
                                 .replace(/_/g, ' ')
                             }
                         >
@@ -86,7 +86,7 @@ export default function Preset({presetBackgrounds, setPresetBackgrounds, backgro
                                 {
                                     fileName
                                     .replace('/public/presets_library/background_presets/', '')
-                                    .replace('4k.hdr', '')
+                                    .replace('2k.hdr', '')
                                     .replace(/_/g, ' ')
                                 }
                             </label>
