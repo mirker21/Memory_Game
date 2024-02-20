@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Memory_Game
 What did I learn from my first project?
 
@@ -34,3 +35,13 @@ Things I wish I could include in the project but was unable to?
 - having a timeline using d3. Due to wanting to finish this project sooner rather than later, I settled with creating at least one graph to understand the library, and then deleting the component.
 
 - allowing users to import their own svg symbols, however React wasn't very friendly with displaying/previewing xml elements. Luckily I provided some presets that people can choose from. In general svgs were a pain to work with in this project.
+=======
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+>>>>>>> 9706d29 (all files added to repo)
