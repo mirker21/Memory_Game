@@ -577,13 +577,13 @@ export default function Gameboard() {
                     setSeconds(newSeconds);
                 } else if (seconds < penalty) {
                     let remainder = seconds - penalty;
-                    newSeconds = 60 - remainder;
+                    newSeconds = 59 + remainder;
                     newMinutes = minutes - 1;
                     setMinutes(newMinutes);
                     setSeconds(newSeconds);
                 } else if (seconds === 0) {
                     newMinutes = minutes - 1;
-                    newSeconds = 60 - penalty;
+                    newSeconds = 59 - penalty;
                     setMinutes(newMinutes);
                     setSeconds(newSeconds);
                 }
