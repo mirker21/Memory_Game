@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 
 import { DisplayContext, GameSettingsContext } from '../../Game';
 
-const imagePresetFiles = import.meta.glob('/public/presets_library/symbol_presets/*.svg')
+const imagePresetFiles = import.meta.glob('../../../dist/presets_library/symbol_presets/*.svg')
 const imagePresetFileNames = Object.keys(imagePresetFiles)
 // In case if no symbols are selected, imagePresetFileNames will be the default.
 
