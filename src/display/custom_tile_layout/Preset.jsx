@@ -6,6 +6,7 @@ const imagePresetFiles = import.meta.glob(
     './presets_library/layout_presets/*.png'
 );
 let imagePresetFileNames = Object.keys(imagePresetFiles)
+console.log(imagePresetFileNames)
 
 import Checkmark from "../../components/Checkmark";
 
