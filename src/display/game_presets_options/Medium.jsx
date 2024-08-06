@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { GameSettingsContext } from "../../Game";
 import { DisplayContext } from "../../Game";
 
-const imagePresetFiles = import.meta.glob('./presets_library/background_presets/*.hdr');
+const imagePresetFiles = import.meta.glob('../../../dist/presets_library/background_presets/*.hdr');
 const imagePresetFileNames = Object.keys(imagePresetFiles);
 
 export default function Medium() {
