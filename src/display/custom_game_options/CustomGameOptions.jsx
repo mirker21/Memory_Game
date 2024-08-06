@@ -11,7 +11,7 @@ import JustChillingCustomGameOptions from './JustChillingCustomGameOptions';
 import ARaceAgainstTimeCustomGameOptions from './ARaceAgainstTimeCustomGameOptions';
 
 const imagePresetFiles = import.meta.glob(
-    '/public/presets_library/background_presets/*.hdr'
+    './presets_library/background_presets/*.hdr'
 );
 const imagePresetFileNames = Object.keys(imagePresetFiles);
 
