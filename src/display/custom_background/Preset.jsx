@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { GameSettingsContext } from "../../Game";
 
-const imagePresetFiles = import.meta.glob('./presets_library/background_presets/*.hdr');
+const imagePresetFiles = import.meta.glob('../../../dist/presets_library/background_presets/*.hdr');
 const imagePresetFileNames = Object.keys(imagePresetFiles);
 
 import Checkmark from "../../components/Checkmark";
@@ -64,7 +64,7 @@ export default function Preset({presetBackgrounds, setPresetBackgrounds, backgro
                             className="custom-single-file-container" 
                             title={
                                 fileName
-                                .replace('/presets_library/background_presets/', '')
+                                .replace('../../../dist/presets_library/background_presets/', '')
                                 .replace('2k.hdr', '')
                                 .replace(/_/g, ' ')
                             }
@@ -85,7 +85,7 @@ export default function Preset({presetBackgrounds, setPresetBackgrounds, backgro
                             >
                                 {
                                     fileName
-                                    .replace('/presets_library/background_presets/', '')
+                                    .replace('../../../dist/presets_library/background_presets/', '')
                                     .replace('2k.hdr', '')
                                     .replace(/_/g, ' ')
                                 }
