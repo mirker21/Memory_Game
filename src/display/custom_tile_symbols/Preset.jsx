@@ -59,7 +59,7 @@ export default function Preset(
                             className="custom-single-file-container" 
                             title={
                                 fileName
-                                .replace('/public/presets_library/symbol_presets/', '')
+                                .replace('../../../dist/presets_library/symbol_presets/', '')
                                 .replace('.svg', '')
                                 .replace(/_/g, ' ')
                             }
@@ -79,7 +79,7 @@ export default function Preset(
                             <label className="custom-symbol-label" htmlFor={fileName}>
                                 {
                                     fileName
-                                    .replace('/public/presets_library/symbol_presets/', '')
+                                    .replace('../../../dist/presets_library/symbol_presets/', '')
                                     .replace('.svg', '')
                                     .replace(/_/g, ' ')
                                 }
@@ -89,7 +89,7 @@ export default function Preset(
                                     src={fileName} 
                                     alt={
                                         fileName
-                                        .replace('/public/presets_library/symbol_presets/', '')
+                                        .replace('../../../dist/presets_library/symbol_presets/', '')
                                         .replace('.svg', '')
                                         .replace(/_/g, ' ')
                                     } 
