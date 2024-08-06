@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { GameSettingsContext } from "../../Game";
 
-const imagePresetFiles = import.meta.glob('../../../dist/presets_library/background_presets/*.hdr');
+const imagePresetFiles = import.meta.glob('../../../dist/presets_library/background_presets/*.hdr', { eager: true, as: "raw" });
 const imagePresetFileNames = Object.keys(imagePresetFiles);
 
 import Checkmark from "../../components/Checkmark";
