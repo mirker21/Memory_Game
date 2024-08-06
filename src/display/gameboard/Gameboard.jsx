@@ -10,7 +10,7 @@ import QuitModal from '../../components/QuitModal'
 import RoundOverModal from "../../components/RoundOverModal";
 import { OrbitControls, PerspectiveCamera, Environment, Sparkles } from "@react-three/drei";
 
-const defaultSymbolFiles = import.meta.glob('/public/presets_library/symbol_presets/*.svg')
+const defaultSymbolFiles = import.meta.glob('../../../dist/presets_library/symbol_presets/*.svg')
 const defaultSymbolFileNames = Object.keys(defaultSymbolFiles)
 
 const defaultSymbolColors = [
