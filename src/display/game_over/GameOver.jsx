@@ -89,7 +89,7 @@ export default function GameOverWinner() {
         <div id="game-over-loser"> 
             <img 
                 id="game-over-letters-gif" 
-                src="/public/Lottie_Animations/Game_Over_Animation.gif" 
+                src="./Lottie_Animations/Game_Over_Animation.gif" 
                 alt="GAME OVER!" 
             />
 
