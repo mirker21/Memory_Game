@@ -103,7 +103,7 @@ export default function GameOverWinner() {
             <div id="banner-container">
                 <img id="congrats-letters-gif" 
                     className={isAppearGif === false ? "hide" : ""} 
-                    src="/public/Lottie_Animations/Congrats_Animation.gif" 
+                    src="./Lottie_Animations/Congrats_Animation.gif" 
                     alt="CONGRATS!" 
                 />
                 
