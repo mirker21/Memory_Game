@@ -11,7 +11,7 @@ export default function TitleScreen() {
             <div id="title-screen-title">
                 <img 
                     id="title-screen-letters-gif" 
-                    src="/public/Lottie_Animations/Title.gif" 
+                    src="./Lottie_Animations/Title.gif" 
                     alt="" 
                 />
             </div>
