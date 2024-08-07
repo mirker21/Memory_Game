@@ -9,6 +9,9 @@ export function GET_PRESETS(subdirectory) {
   return new Response(files);
 }
 
+const presets = GET_PRESETS('layout_presets')
+console.log(presets)
+
 function App() {
 
   return (
