@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { GameSettingsContext } from "../../Game";
 
 const imagePresetFiles = import.meta.glob(
-    '/presets_library/layout_presets/*.png'
+    '../../../dist/presets_library/layout_presets/*.png'
 );
 let imagePresetFileNames = Object.keys(imagePresetFiles)
 
@@ -59,7 +59,7 @@ export default function Preset({presetLayouts, setPresetLayouts, layoutCount}) {
                                 className="custom-single-file-container" 
                                 title={
                                     fileName
-                                    .replace('/presets_library/layout_presets/', '')
+                                    .replace('../../../dist/presets_library/layout_presets/', '')
                                     .replace('.png', '')
                                     .replace(/_/g, ' ')
                                 }
@@ -80,7 +80,7 @@ export default function Preset({presetLayouts, setPresetLayouts, layoutCount}) {
                                 >
                                     {
                                         fileName
-                                        .replace('/presets_library/layout_presets/', '')
+                                        .replace('../../../dist/presets_library/layout_presets/', '')
                                         .replace('.png', '')
                                         .replace(/_/g, ' ')
                                     }
