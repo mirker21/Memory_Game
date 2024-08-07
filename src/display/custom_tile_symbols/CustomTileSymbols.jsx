@@ -2,13 +2,13 @@ import { useState, useContext } from 'react';
 
 import { DisplayContext, GameSettingsContext } from '../../Game';
 
-const imagePresetFiles = import.meta.glob('/presets_library/symbol_presets/*.svg')
-const imagePresetFileNames = Object.keys(imagePresetFiles)
 // In case if no symbols are selected, imagePresetFileNames will be the default.
 
 import Preset from './Preset'
 
 export default function CustomTileSymbols() {
+    const imagePresetFiles = import.meta.glob('/presets_library/symbol_presets/*.svg')
+    const imagePresetFileNames = Object.keys(imagePresetFiles)
     console.log('vercel', imagePresetFiles)
     const {setSymbols, setSymbolColors} = useContext(GameSettingsContext);
     const {setDisplay} = useContext(DisplayContext);
