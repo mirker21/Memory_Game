@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { GameSettingsContext } from "../../Game";
 
 const imagePresetFiles = import.meta.glob(
-    '/dist/presets_library/layout_presets/*.png'
+    '/static/presets_library/layout_presets/*.png'
 );
 let imagePresetFileNames = Object.keys(imagePresetFiles)
 
