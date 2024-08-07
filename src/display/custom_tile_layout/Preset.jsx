@@ -5,7 +5,7 @@ import { GameSettingsContext } from "../../Game";
 import * as images from '../../../dist/presets_library/layout_presets'
 
 const imagePresetFiles = import.meta.glob(
-    '../../../dist/presets_library/layout_presets/*.png'
+    '.vercel/output/static/presets_library/layout_presets/*.png'
 );
 let imagePresetFileNames = Object.keys(imagePresetFiles)
 
