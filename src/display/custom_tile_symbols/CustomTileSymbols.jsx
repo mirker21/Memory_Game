@@ -3,7 +3,7 @@ import { useState, useContext } from 'react';
 import { DisplayContext, GameSettingsContext } from '../../Game';
 
 // In case if no symbols are selected, imagePresetFileNames will be the default.
-const imagePresetFiles = import.meta.glob('.vercel/output/static/presets_library/symbol_presets/*.svg')
+const imagePresetFiles = import.meta.glob('./presets_library/symbol_presets/*.svg')
 const imagePresetFileNames = Object.keys(imagePresetFiles)
 
 import Preset from './Preset'
