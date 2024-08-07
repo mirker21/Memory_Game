@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { GameSettingsContext } from "../../Game";
 
 import * as images from '../../../dist/presets_library/layout_presets'
-console.log(images)
 
 const imagePresetFiles = import.meta.glob(
     '../../../dist/presets_library/layout_presets/*.png'
@@ -17,11 +16,11 @@ export function GET_PRESETS(subdirectory) {
   return new Response(files);
 }
 
-console.log(GET_PRESETS)
-
 import Checkmark from "../../components/Checkmark";
 
 export default function Preset({presetLayouts, setPresetLayouts, layoutCount}) {
+    console.log(GET_PRESETS)
+    console.log(images)
     console.log(imagePresetFileNames)
     
     const {rounds} = useContext(GameSettingsContext);
