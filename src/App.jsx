@@ -2,6 +2,7 @@ import Game from "./Game"
 
 import fs from 'fs';
 import path from 'path';
+import process from 'process';
 
 export function GET_PRESETS(subdirectory) {
   let presetsPath = path.join(process.cwd(), '/presets_library/' + subdirectory);
