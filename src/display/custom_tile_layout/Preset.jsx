@@ -9,7 +9,6 @@ const imagePresetFiles = import.meta.glob(
     '/static/presets_library/layout_presets/*.png'
 );
 let imagePresetFileNames = Object.keys(imagePresetFiles)
-console.log(process.cwd
 
 import Checkmark from "../../components/Checkmark";
 
