@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { GameSettingsContext } from "../../Game";
 
-import * as images from './vercel/path0/dist/presets_library/layout_presets
+import * as images from './vercel/path0/dist/presets_library/layout_presets'
 
 const imagePresetFiles = import.meta.glob(
     './vercel/path0/dist/presets_library/layout_presets/*.png'
