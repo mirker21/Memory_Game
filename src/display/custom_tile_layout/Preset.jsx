@@ -2,10 +2,14 @@ import { useContext } from "react";
 
 import { GameSettingsContext } from "../../Game";
 
+import imageTest from '../../../.vercel/output/static/presets_library/layout_presets/cat.png'
+console.log(imageTest)
+
 const imagePresetFiles = import.meta.glob(
     '/static/presets_library/layout_presets/*.png'
 );
 let imagePresetFileNames = Object.keys(imagePresetFiles)
+console.log(process.cwd
 
 import Checkmark from "../../components/Checkmark";
 
