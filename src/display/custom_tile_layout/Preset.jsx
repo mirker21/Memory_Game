@@ -2,10 +2,22 @@ import { useContext } from "react";
 
 import { GameSettingsContext } from "../../Game";
 
+import * as images from '../../../dist/presets_library/layout_presets'
+console.log(images)
+
 const imagePresetFiles = import.meta.glob(
     '../../../dist/presets_library/layout_presets/*.png'
 );
 let imagePresetFileNames = Object.keys(imagePresetFiles)
+
+import * as fs from 'fs'
+export function GET_PRESETS(subdirectory) {
+  let presetsPath = process.cwd() + '/presets_library/' + subdirectory;
+  let files = fs.readdirSync(presetsPath);
+  return new Response(files);
+}
+
+console.log(GET_PRESETS)
 
 import Checkmark from "../../components/Checkmark";
 
