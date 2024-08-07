@@ -9,6 +9,7 @@ const imagePresetFileNames = Object.keys(imagePresetFiles)
 import Preset from './Preset'
 
 export default function CustomTileSymbols() {
+    console.log('vercel', imagePresetFiles)
     const {setSymbols, setSymbolColors} = useContext(GameSettingsContext);
     const {setDisplay} = useContext(DisplayContext);
 
