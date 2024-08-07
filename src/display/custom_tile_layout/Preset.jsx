@@ -9,7 +9,7 @@ const imageTest = new URL('./cat.png', import.meta.url).href
 console.log(imageTest)
 
 const imagePresetFiles = import.meta.glob(
-    '/static/presets_library/layout_presets/*.png'
+    '/*.png'
 );
 let imagePresetFileNames = Object.keys(imagePresetFiles)
 
